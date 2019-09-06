@@ -35,9 +35,35 @@ Best to put avobe command in keyboard shorcut. Then you can run in by tapping ju
 
 
 ## Install
-Create ssh proxy profile by using following command
+Connect Raspberry Pi3B+ to WiFi A by ethernet cable and WiFi B using WiFi.
+
+Now you have Raspberry Pi3B+ connected to 2 Networks.
+
+Set up ssh passwordless authentication.
+
+Edit /home/user/.ssh/config
+or create if it does not exist
+
+Write
+Host proxy-yogurt
+
+        HostName IP address of pi3B+ given by WiFI A
+
+        user pi
+
+        port Specify Port number. 22 by default
+
+        DynamicForward 9999
+
+And save.
+
+Create Firefox proxy profile by using following command
 
 firefox -ProfileManager
+
+name profile as you like, I named it proxy-to-yogurt. Keep it simple though.
+
+Remeber the profile name. You need it later.
 
 Go to preferences 
 
@@ -47,7 +73,12 @@ set as follows
 
 ![FireFoxsocksProxySettings](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/socksproxy.jpeg)
 
-set up network settings like following
+
+Open run_can_via_ssh_proxy.py
+
+If you changed name of Host in .ssh/config then change line 4 to proxy-yogurt to whatever the name you name it on .ssh/config Host.
+
+Edit line 5 firefox -P "Profile you named in Firefox  profileManager"
 
 
 ## Contribution
