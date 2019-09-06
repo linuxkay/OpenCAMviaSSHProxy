@@ -1,7 +1,7 @@
 # OpenCAMviaSSHProxy
 This opens network cam stream at separated network though ssh proxy.
 ## Description
-Let's say you are in WiFi network A 192.168.0.0 but your cam at WiFi B 192.168.1.0 network. You still can get access via ssh proxy if you have RaspberryPi3B+ connected Both WiFiA and WiFiB using Ethernet and Wlan. Thanks to Pi3B+ has 2 NICs by default.
+Let's say you have 2 WiFi networks such as A and B. WiFi A is for your regular use browsing, facebooking and etc. WiFi B is for Local Network CAM. You don't want CAM to be connected outside of LAN. So in this case, WiFi B and CAM is completely isoated from WAN. However, You still can get access via ssh proxy if you have RaspberryPi3B+ connected Both WiFii A and WiFi B just using Ethernet and Wlan. Thanks to Pi3B+ has 2 NICs by default. SSH proxy magic does this for you.
 
 # Demo in Animation
 ![DemoOpenCamviaProxy](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/openCamviaProxy-demo.gif)
