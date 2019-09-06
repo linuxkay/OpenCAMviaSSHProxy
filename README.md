@@ -74,7 +74,7 @@ set as follows
 ![FireFoxsocksProxySettings](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/socksproxy.jpeg)
 
 
-Open run_can_via_ssh_proxy.py
+Edit run_can_via_ssh_proxy.py
 
 If you changed name of Host in .ssh/config then change line 4 to proxy-yogurt to whatever the name you name it on .ssh/config Host.
 
