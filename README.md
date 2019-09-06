@@ -12,7 +12,7 @@ It opens HTTP CAM stream from another isolated network.
 
 files
 
-run_cam_via_yogurt_proxy.py
+run_cam_via_ssh_proxy.py
 - Establish ssh proxy connection to Raspberry1B+ 
 
 ## VS. 
@@ -24,6 +24,12 @@ Firefox
 ssh key login authentication.
 
 ## Usage
+Simpy run py file in terminal.
+python3 run_cam_via_ssh_proxy.py
+
+Best to put avobe command in keyboard shorcut. Then you can run in by tapping just 1 key.
+![KeyboardShotcutCamProxy](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/keyboard-shotcut-forCamproxy.jpeg)
+
 
 ## Install
 
