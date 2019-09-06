@@ -21,7 +21,9 @@ run_cam_via_ssh_proxy.py
 
 ## Requirements
 gnome-terminal
+
 Firefox
+
 ssh key login authentication.
 
 ## Usage
