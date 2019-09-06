@@ -7,16 +7,15 @@ Let's say you have 2 WiFi networks such as A and B. WiFi A is for your regular u
 ![DemoOpenCamviaProxy](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/openCamviaProxy-demo.gif)
 
 ## Overview
+Network topology looks like following
 ![Topology](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/networkAplusB.gif)
 
-It opens HTTP CAM stream from another isolated network.
+So request ssh proxy first and then get http cam stream through ssh tunnel.
 
 files
 
 run_cam_via_ssh_proxy.py
 - Establish ssh proxy connection to Raspberry1B+ 
-
-## VS. 
 
 
 ## Requirements
@@ -36,6 +35,20 @@ Best to put avobe command in keyboard shorcut. Then you can run in by tapping ju
 
 
 ## Install
+Create ssh proxy profile by using following command
+
+firefox -ProfileManager
+
+Go to preferences 
+
+find Network settings
+
+set as follows
+
+![FireFoxsocksProxySettings](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/socksproxy.jpeg)
+
+set up network settings like following
+
 
 ## Contribution
 
