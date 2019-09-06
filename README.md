@@ -45,6 +45,7 @@ Edit /home/user/.ssh/config
 or create if it does not exist
 
 Write
+
 Host proxy-yogurt
 
         HostName IP address of pi3B+ given by WiFI A
