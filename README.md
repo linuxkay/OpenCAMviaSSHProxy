@@ -56,12 +56,14 @@ Host proxy-yogurt
 
         DynamicForward 9999
 
-	RequestTTY no
+        RequestTTY no
 
-	RemoteCommand cat
+        RemoteCommand cat
 
 And save.
 Credits to <a href="https://unix.stackexchange.com/questions/424183/what-is-the-ssh-config-corresponding-option-for-ssh-n">StackExchange: What is the .ssh/config corresponding option for ssh -N</a>
+
+
 Create Firefox proxy profile by using following command
 
 `firefox -ProfileManager`
