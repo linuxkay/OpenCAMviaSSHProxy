@@ -14,7 +14,7 @@ So request ssh proxy first and then get http cam stream through ssh tunnel.
 
 files
 
-run_cam_via_ssh_proxy.py
+`run_cam_via_ssh_proxy.py`
 - Establish ssh proxy connection to Raspberry1B+ 
 
 
@@ -28,7 +28,7 @@ ssh key login authentication.
 ## Usage
 Simpy run py file in terminal.
 
-$ python3 run_cam_via_ssh_proxy.py
+$ `python3 run_cam_via_ssh_proxy.py`
 
 Best to put avobe command in keyboard shorcut. Then you can run in by tapping just 1 key.
 ![KeyboardShotcutCamProxy](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/keyboard-shotcut-forCamproxy.jpeg)
@@ -41,7 +41,7 @@ Now you have Raspberry Pi3B+ connected to 2 Networks.
 
 Set up ssh passwordless authentication.
 
-Edit /home/user/.ssh/config
+Edit `~/.ssh/config`
 or create if it does not exist
 
 Write
@@ -56,11 +56,15 @@ Host proxy-yogurt
 
         DynamicForward 9999
 
-And save.
+	RequestTTY no
 
+	RemoteCommand cat
+
+And save.
+Credits to <a href="https://unix.stackexchange.com/questions/424183/what-is-the-ssh-config-corresponding-option-for-ssh-n">StackExchange: What is the .ssh/config corresponding option for ssh -N</a>
 Create Firefox proxy profile by using following command
 
-firefox -ProfileManager
+`firefox -ProfileManager`
 
 name profile as you like, I named it proxy-to-yogurt. Keep it simple though.
 
@@ -75,11 +79,11 @@ set as follows
 ![FireFoxsocksProxySettings](https://raw.githubusercontent.com/wiki/linuxkay/OpenCAMviaSSHProxy/images/socksproxy.jpeg)
 
 
-Edit run_can_via_ssh_proxy.py
+Edit `run_can_via_ssh_proxy.py`
 
-If you changed name of Host in .ssh/config then change line 4 to proxy-yogurt to whatever the name you name it on .ssh/config Host.
+If you changed name of Host in `~/.ssh/config` then change line 4 to proxy-yogurt to whatever the name you name it on `~/.ssh/config` Host.
 
-Edit line 5 firefox -P "Profile you named in Firefox  profileManager"
+Edit line 5 `firefox -P "Profile you named in Firefox  profileManager"`
 
 
 ## Contribution
