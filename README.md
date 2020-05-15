@@ -72,6 +72,12 @@ name profile as you like, I named it proxy-to-yogurt. Keep it simple though.
 
 Remeber the profile name. You need it later.
 
+Then click finish after you named a profile.
+
+Next is to click on "Start FireFox" button with your newly created profile.
+
+After FireFox launched,
+
 Go to preferences 
 
 find Network settings
